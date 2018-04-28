@@ -88,6 +88,37 @@ namespace Module2
             //     n++;
             // }
 
+            bool test = true;
+            // bool newLine;
+
+            for (int row = 0; row < 8; row++)
+            {
+                for (int column = 0; column < 8; column++)
+                {
+                    if (test)
+                    {
+                        Console.Write("X");
+                        test = false;
+                    }
+                    else if (!test)
+                    {
+                        Console.Write("O");
+                        test = true;
+                    }
+                    
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+                if (test)
+                {
+                    test = false;
+                }
+                else
+                {
+                    test = true;
+                }
+                // test = false;
+            }
 
 
 
