@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/matthewrizzini/Intro_To_CSharp/Intro_To_CSharp.csproj",
-      "projectName": "Intro_To_CSharp",
-      "projectPath": "/Users/matthewrizzini/Intro_To_CSharp/Intro_To_CSharp.csproj",
+      "projectUniqueName": "/Users/matthewrizzini/Intro_To_CSharp/Module2/Module2.csproj",
+      "projectName": "Module2",
+      "projectPath": "/Users/matthewrizzini/Intro_To_CSharp/Module2/Module2.csproj",
       "packagesPath": "/Users/matthewrizzini/.nuget/packages/",
-      "outputPath": "/Users/matthewrizzini/Intro_To_CSharp/obj/",
+      "outputPath": "/Users/matthewrizzini/Intro_To_CSharp/Module2/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
