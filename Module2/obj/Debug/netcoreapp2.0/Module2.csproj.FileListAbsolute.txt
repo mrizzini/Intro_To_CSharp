@@ -1,0 +1,10 @@
+/Users/matthewrizzini/Intro_To_CSharp/Module2/bin/Debug/netcoreapp2.0/Module2.deps.json
+/Users/matthewrizzini/Intro_To_CSharp/Module2/bin/Debug/netcoreapp2.0/Module2.runtimeconfig.json
+/Users/matthewrizzini/Intro_To_CSharp/Module2/bin/Debug/netcoreapp2.0/Module2.runtimeconfig.dev.json
+/Users/matthewrizzini/Intro_To_CSharp/Module2/bin/Debug/netcoreapp2.0/Module2.dll
+/Users/matthewrizzini/Intro_To_CSharp/Module2/bin/Debug/netcoreapp2.0/Module2.pdb
+/Users/matthewrizzini/Intro_To_CSharp/Module2/obj/Debug/netcoreapp2.0/Module2.csproj.CoreCompileInputs.cache
+/Users/matthewrizzini/Intro_To_CSharp/Module2/obj/Debug/netcoreapp2.0/Module2.AssemblyInfoInputs.cache
+/Users/matthewrizzini/Intro_To_CSharp/Module2/obj/Debug/netcoreapp2.0/Module2.AssemblyInfo.cs
+/Users/matthewrizzini/Intro_To_CSharp/Module2/obj/Debug/netcoreapp2.0/Module2.dll
+/Users/matthewrizzini/Intro_To_CSharp/Module2/obj/Debug/netcoreapp2.0/Module2.pdb
