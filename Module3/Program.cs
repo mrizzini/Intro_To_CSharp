@@ -46,6 +46,9 @@ namespace Module3
                 Console.WriteLine(notImp.Message);
             }
 
+            GetCourseInformation();
+
+
         }
 
         // LAB 1
@@ -142,6 +145,21 @@ namespace Module3
         {
             throw new NotImplementedException();
         }
+
+        static void GetCourseInformation()
+        {
+            Console.WriteLine("Enter the course name: ");
+            string courseName = Console.ReadLine();
+            Console.WriteLine("How many credits is the course: ");
+            float credits = Single.Parse(Console.ReadLine());
+            PrintCourseDetails(courseName, credits);
+        }
+
+        static void PrintCourseDetails(string course, float credits)
+        {
+            Console.WriteLine("Course is {0} and it is {1} credits", course, credits);
+        }
+
 
     }
 }
