@@ -19,16 +19,32 @@ namespace Module3
 
             // LAB 2
 
-            int first = 9;
-            int second = 0;
-            Console.WriteLine("Enter your first number: ");
-            first = System.Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter your second number: ");
-            second = System.Int32.Parse(Console.ReadLine());
+            // int first = 9;
+            // int second = 0;
+            // Console.WriteLine("Enter your first number: ");
+            // first = System.Int32.Parse(Console.ReadLine());
+            // Console.WriteLine("Enter your second number: ");
+            // second = System.Int32.Parse(Console.ReadLine());
 
-            int result = Divide(first, second);
-            Console.WriteLine($"The result of dividing {first} by {second} is {result}");
+            // int result = Divide(first, second);
+            // Console.WriteLine($"The result of dividing {first} by {second} is {result}");
 
+            // ASSIGNMENT
+
+            // string studentFirstName;
+            // string studentLastName;
+
+            GetStudentInformation();
+            GetTeacherInformation();
+          
+            try
+            {
+                ValidateStudentBday();
+            }
+            catch (NotImplementedException notImp)
+            {
+                Console.WriteLine(notImp.Message);
+            }
 
         }
 
@@ -71,20 +87,60 @@ namespace Module3
         // We do no validation of the the arguments so a user may pass in a zero
         // in place of the second parameter.   This is an illegal operation in math
         // If we don't validate input or catch the error, the application will crash
-        static int Divide(int first, int second)
+        // static int Divide(int first, int second)
+        // {
+        //     int result = 0; // declared up here so we have access inside and out of function
+
+        //     try
+        //     {
+        //         result = first / second;
+        //     }
+        //     catch (DivideByZeroException ex) // this block looks for DivideByZeroException and if it occurs, we dispay this mesage
+        //     {
+        //         Console.WriteLine("Cannot divide by zero, please provide a non-zero value for your second value");
+        //     }
+
+        //     return result;
+        // }
+
+        // ASSIGNMENT
+
+        static void GetStudentInformation()
         {
-            int result = 0; // declared up here so we have access inside and out of function
+            Console.WriteLine("Enter the student's first name: ");
+            string studentFirstName = Console.ReadLine();
+            Console.WriteLine("Enter the student's last name: ");
+            string studentLastName = Console.ReadLine();
+            Console.WriteLine("Enter your birthdate: ");
+            DateTime studentBday = DateTime.Parse(Console.ReadLine());
+            PrintStudentDetails(studentFirstName, studentLastName, studentBday);
+        }
 
-            try
-            {
-                result = first / second;
-            }
-            catch (DivideByZeroException ex) // this block looks for DivideByZeroException and if it occurs, we dispay this mesage
-            {
-                Console.WriteLine("Cannot divide by zero, please provide a non-zero value for your second value");
-            }
+        static void PrintStudentDetails(string first, string last, DateTime studentBday) // string birthday)
+        {
+            Console.WriteLine("{0} {1} was born on {2}", first, last, studentBday); //birthday)
+        }
 
-            return result;
+        static void GetTeacherInformation()
+        {
+            Console.WriteLine("Enter the teacher's city: ");
+            string teacherCity = Console.ReadLine();
+            Console.WriteLine("Enter the teacher's state: ");
+            string teacherState = Console.ReadLine();
+            Console.WriteLine("Enter your zipcode: ");
+            int teacherZipcode = System.Int32.Parse(Console.ReadLine());
+            PrintTeacherDetails(teacherCity, teacherState, teacherZipcode);
+        }
+
+
+        static void PrintTeacherDetails(string city, string state, int zipcode) // string birthday)
+        {
+            Console.WriteLine("Teacher is from {0}, {1}, {2}", city, state, zipcode); //birthday)
+        }
+
+        static void ValidateStudentBday()
+        {
+            throw new NotImplementedException();
         }
 
     }
